@@ -1,0 +1,10 @@
+C:\Users\lenovo\Documents\Maxwell\FICR - Sistemas para Internet\Saúde Controlada\Health Control\Health Control\bin\Release\Health Control.exe.config
+C:\Users\lenovo\Documents\Maxwell\FICR - Sistemas para Internet\Saúde Controlada\Health Control\Health Control\bin\Release\Health Control.exe
+C:\Users\lenovo\Documents\Maxwell\FICR - Sistemas para Internet\Saúde Controlada\Health Control\Health Control\bin\Release\Health Control.pdb
+C:\Users\lenovo\Documents\Maxwell\FICR - Sistemas para Internet\Saúde Controlada\Health Control\Health Control\obj\Release\Health Control.csprojAssemblyReference.cache
+C:\Users\lenovo\Documents\Maxwell\FICR - Sistemas para Internet\Saúde Controlada\Health Control\Health Control\obj\Release\Health_Control.tela_login.resources
+C:\Users\lenovo\Documents\Maxwell\FICR - Sistemas para Internet\Saúde Controlada\Health Control\Health Control\obj\Release\Health_Control.tela_relatorio.resources
+C:\Users\lenovo\Documents\Maxwell\FICR - Sistemas para Internet\Saúde Controlada\Health Control\Health Control\obj\Release\Health_Control.Properties.Resources.resources
+C:\Users\lenovo\Documents\Maxwell\FICR - Sistemas para Internet\Saúde Controlada\Health Control\Health Control\obj\Release\Health Control.csproj.GenerateResource.cache
+C:\Users\lenovo\Documents\Maxwell\FICR - Sistemas para Internet\Saúde Controlada\Health Control\Health Control\obj\Release\Health Control.exe
+C:\Users\lenovo\Documents\Maxwell\FICR - Sistemas para Internet\Saúde Controlada\Health Control\Health Control\obj\Release\Health Control.pdb
