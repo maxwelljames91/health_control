@@ -68,7 +68,7 @@
             this.textbox_senha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textbox_senha.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textbox_senha.ForeColor = System.Drawing.Color.Gray;
-            this.textbox_senha.Location = new System.Drawing.Point(50, 9);
+            this.textbox_senha.Location = new System.Drawing.Point(50, 10);
             this.textbox_senha.Name = "textbox_senha";
             this.textbox_senha.Size = new System.Drawing.Size(254, 25);
             this.textbox_senha.TabIndex = 3;

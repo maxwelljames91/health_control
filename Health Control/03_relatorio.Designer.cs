@@ -36,6 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txt_pesquisa = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,7 +47,6 @@
             this.Column7 = new System.Windows.Forms.DataGridViewImageColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.btn_acoes = new System.Windows.Forms.Button();
             this.btn_filtro = new System.Windows.Forms.Button();
             this.btn_novo_cadastro = new System.Windows.Forms.Button();
@@ -117,6 +117,19 @@
             this.txt_pesquisa.Name = "txt_pesquisa";
             this.txt_pesquisa.Size = new System.Drawing.Size(237, 15);
             this.txt_pesquisa.TabIndex = 9;
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::Health_Control.Properties.Resources.btn_pesquisa;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(251, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(38, 29);
+            this.button3.TabIndex = 4;
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -213,19 +226,6 @@
             this.button2.Text = " CONFIGURAÇÕES";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = global::Health_Control.Properties.Resources.btn_pesquisa;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(251, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(38, 29);
-            this.button3.TabIndex = 4;
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // btn_acoes
             // 

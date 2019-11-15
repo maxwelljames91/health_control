@@ -31,5 +31,20 @@ namespace Health_Control
         {
 
         }
+
+        private void btn_voltar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_salvar_cadastro_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

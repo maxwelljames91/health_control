@@ -29,270 +29,356 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tela_cadastro));
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txt_cadastro = new System.Windows.Forms.Label();
+            this.txt_nomecompleto = new System.Windows.Forms.Label();
+            this.pnl_nomecompleto = new System.Windows.Forms.Panel();
+            this.textbox_nomecompleto = new System.Windows.Forms.TextBox();
+            this.pnl_divisor = new System.Windows.Forms.Panel();
+            this.txt_email = new System.Windows.Forms.Label();
+            this.pnl_email = new System.Windows.Forms.Panel();
+            this.textbox_email = new System.Windows.Forms.TextBox();
+            this.pnl_telefone = new System.Windows.Forms.Panel();
+            this.textbox_telefone = new System.Windows.Forms.TextBox();
+            this.txt_telefone = new System.Windows.Forms.Label();
+            this.pnl_nascimento = new System.Windows.Forms.Panel();
+            this.textbox_nascimento = new System.Windows.Forms.TextBox();
+            this.txt_nascimento = new System.Windows.Forms.Label();
+            this.pnl_funcao = new System.Windows.Forms.Panel();
+            this.textbox_funcao = new System.Windows.Forms.TextBox();
+            this.txt_funcao = new System.Windows.Forms.Label();
+            this.btn_cadastrar = new System.Windows.Forms.Button();
+            this.btn_cancelar = new System.Windows.Forms.Button();
+            this.img_icon_cadastro = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_controle = new System.Windows.Forms.Label();
-            this.btn_salvar_cadastro = new System.Windows.Forms.Button();
-            this.btn_voltar = new System.Windows.Forms.Button();
-            this.text_nome = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel3.SuspendLayout();
+            this.pnl_nomecompleto.SuspendLayout();
+            this.pnl_email.SuspendLayout();
+            this.pnl_telefone.SuspendLayout();
+            this.pnl_nascimento.SuspendLayout();
+            this.pnl_funcao.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_icon_cadastro)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel3
+            // txt_cadastro
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.textBox4);
-            this.panel3.Controls.Add(this.panel6);
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Controls.Add(this.panel1);
-            this.panel3.Controls.Add(this.text_nome);
-            this.panel3.Controls.Add(this.panel2);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(20, 99);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1223, 563);
-            this.panel3.TabIndex = 25;
+            this.txt_cadastro.AutoSize = true;
+            this.txt_cadastro.BackColor = System.Drawing.Color.Transparent;
+            this.txt_cadastro.Font = new System.Drawing.Font("Arial Narrow", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cadastro.Location = new System.Drawing.Point(290, 30);
+            this.txt_cadastro.Name = "txt_cadastro";
+            this.txt_cadastro.Size = new System.Drawing.Size(388, 33);
+            this.txt_cadastro.TabIndex = 21;
+            this.txt_cadastro.Text = "CADASTRO DE COLABORADOR";
             // 
-            // label5
+            // txt_nomecompleto
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(65, 444);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 19);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "FUNÇÃO";
+            this.txt_nomecompleto.AutoSize = true;
+            this.txt_nomecompleto.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nomecompleto.Location = new System.Drawing.Point(49, 90);
+            this.txt_nomecompleto.Name = "txt_nomecompleto";
+            this.txt_nomecompleto.Size = new System.Drawing.Size(123, 16);
+            this.txt_nomecompleto.TabIndex = 5;
+            this.txt_nomecompleto.Text = "NOME COMPLETO";
+            this.txt_nomecompleto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.txt_nomecompleto.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label4
+            // pnl_nomecompleto
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(65, 141);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 19);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "E-MAIL";
+            this.pnl_nomecompleto.BackColor = System.Drawing.Color.White;
+            this.pnl_nomecompleto.Controls.Add(this.textbox_nomecompleto);
+            this.pnl_nomecompleto.Location = new System.Drawing.Point(52, 109);
+            this.pnl_nomecompleto.Name = "pnl_nomecompleto";
+            this.pnl_nomecompleto.Size = new System.Drawing.Size(401, 32);
+            this.pnl_nomecompleto.TabIndex = 15;
+            this.pnl_nomecompleto.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // label3
+            // textbox_nomecompleto
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(65, 242);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 19);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "TELEFONE";
+            this.textbox_nomecompleto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_nomecompleto.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_nomecompleto.ForeColor = System.Drawing.Color.Gray;
+            this.textbox_nomecompleto.Location = new System.Drawing.Point(12, 7);
+            this.textbox_nomecompleto.Name = "textbox_nomecompleto";
+            this.textbox_nomecompleto.Size = new System.Drawing.Size(378, 18);
+            this.textbox_nomecompleto.TabIndex = 14;
             // 
-            // label2
+            // pnl_divisor
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(65, 343);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(189, 19);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "DATA DE NASCIMENTO";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.pnl_divisor.BackColor = System.Drawing.Color.Transparent;
+            this.pnl_divisor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_divisor.Location = new System.Drawing.Point(500, 90);
+            this.pnl_divisor.Name = "pnl_divisor";
+            this.pnl_divisor.Size = new System.Drawing.Size(10, 407);
+            this.pnl_divisor.TabIndex = 25;
+            // 
+            // txt_email
+            // 
+            this.txt_email.AutoSize = true;
+            this.txt_email.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_email.Location = new System.Drawing.Point(49, 158);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(52, 16);
+            this.txt_email.TabIndex = 29;
+            this.txt_email.Text = "E-MAIL";
+            this.txt_email.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pnl_email
+            // 
+            this.pnl_email.BackColor = System.Drawing.Color.White;
+            this.pnl_email.Controls.Add(this.textbox_email);
+            this.pnl_email.Location = new System.Drawing.Point(52, 177);
+            this.pnl_email.Name = "pnl_email";
+            this.pnl_email.Size = new System.Drawing.Size(401, 32);
+            this.pnl_email.TabIndex = 16;
+            // 
+            // textbox_email
+            // 
+            this.textbox_email.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_email.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_email.ForeColor = System.Drawing.Color.Gray;
+            this.textbox_email.Location = new System.Drawing.Point(10, 7);
+            this.textbox_email.Name = "textbox_email";
+            this.textbox_email.Size = new System.Drawing.Size(380, 18);
+            this.textbox_email.TabIndex = 14;
+            // 
+            // pnl_telefone
+            // 
+            this.pnl_telefone.BackColor = System.Drawing.Color.White;
+            this.pnl_telefone.Controls.Add(this.textbox_telefone);
+            this.pnl_telefone.Location = new System.Drawing.Point(52, 246);
+            this.pnl_telefone.Name = "pnl_telefone";
+            this.pnl_telefone.Size = new System.Drawing.Size(197, 32);
+            this.pnl_telefone.TabIndex = 30;
+            // 
+            // textbox_telefone
+            // 
+            this.textbox_telefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_telefone.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_telefone.ForeColor = System.Drawing.Color.Gray;
+            this.textbox_telefone.Location = new System.Drawing.Point(9, 7);
+            this.textbox_telefone.Name = "textbox_telefone";
+            this.textbox_telefone.Size = new System.Drawing.Size(179, 18);
+            this.textbox_telefone.TabIndex = 14;
+            // 
+            // txt_telefone
+            // 
+            this.txt_telefone.AutoSize = true;
+            this.txt_telefone.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_telefone.Location = new System.Drawing.Point(49, 227);
+            this.txt_telefone.Name = "txt_telefone";
+            this.txt_telefone.Size = new System.Drawing.Size(75, 16);
+            this.txt_telefone.TabIndex = 31;
+            this.txt_telefone.Text = "TELEFONE";
+            this.txt_telefone.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pnl_nascimento
+            // 
+            this.pnl_nascimento.BackColor = System.Drawing.Color.White;
+            this.pnl_nascimento.Controls.Add(this.textbox_nascimento);
+            this.pnl_nascimento.Location = new System.Drawing.Point(52, 316);
+            this.pnl_nascimento.Name = "pnl_nascimento";
+            this.pnl_nascimento.Size = new System.Drawing.Size(152, 32);
+            this.pnl_nascimento.TabIndex = 32;
+            // 
+            // textbox_nascimento
+            // 
+            this.textbox_nascimento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_nascimento.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_nascimento.ForeColor = System.Drawing.Color.Gray;
+            this.textbox_nascimento.Location = new System.Drawing.Point(9, 7);
+            this.textbox_nascimento.Name = "textbox_nascimento";
+            this.textbox_nascimento.Size = new System.Drawing.Size(134, 18);
+            this.textbox_nascimento.TabIndex = 14;
+            // 
+            // txt_nascimento
+            // 
+            this.txt_nascimento.AutoSize = true;
+            this.txt_nascimento.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nascimento.Location = new System.Drawing.Point(49, 297);
+            this.txt_nascimento.Name = "txt_nascimento";
+            this.txt_nascimento.Size = new System.Drawing.Size(152, 16);
+            this.txt_nascimento.TabIndex = 33;
+            this.txt_nascimento.Text = "DATA DE NASCIMENTO";
+            this.txt_nascimento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pnl_funcao
+            // 
+            this.pnl_funcao.BackColor = System.Drawing.Color.White;
+            this.pnl_funcao.Controls.Add(this.textbox_funcao);
+            this.pnl_funcao.Location = new System.Drawing.Point(52, 385);
+            this.pnl_funcao.Name = "pnl_funcao";
+            this.pnl_funcao.Size = new System.Drawing.Size(152, 32);
+            this.pnl_funcao.TabIndex = 34;
+            // 
+            // textbox_funcao
+            // 
+            this.textbox_funcao.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_funcao.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_funcao.ForeColor = System.Drawing.Color.Gray;
+            this.textbox_funcao.Location = new System.Drawing.Point(9, 7);
+            this.textbox_funcao.Name = "textbox_funcao";
+            this.textbox_funcao.Size = new System.Drawing.Size(134, 18);
+            this.textbox_funcao.TabIndex = 14;
+            // 
+            // txt_funcao
+            // 
+            this.txt_funcao.AutoSize = true;
+            this.txt_funcao.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_funcao.Location = new System.Drawing.Point(49, 366);
+            this.txt_funcao.Name = "txt_funcao";
+            this.txt_funcao.Size = new System.Drawing.Size(62, 16);
+            this.txt_funcao.TabIndex = 35;
+            this.txt_funcao.Text = "FUNÇÃO";
+            this.txt_funcao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // btn_cadastrar
+            // 
+            this.btn_cadastrar.BackColor = System.Drawing.Color.Green;
+            this.btn_cadastrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_cadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_cadastrar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_cadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cadastrar.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cadastrar.ForeColor = System.Drawing.Color.White;
+            this.btn_cadastrar.Image = global::Health_Control.Properties.Resources.btn_novo_cadastro;
+            this.btn_cadastrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_cadastrar.Location = new System.Drawing.Point(508, 513);
+            this.btn_cadastrar.Name = "btn_cadastrar";
+            this.btn_cadastrar.Size = new System.Drawing.Size(141, 30);
+            this.btn_cadastrar.TabIndex = 36;
+            this.btn_cadastrar.Text = "CADASTRAR";
+            this.btn_cadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_cadastrar.UseVisualStyleBackColor = false;
+            // 
+            // btn_cancelar
+            // 
+            this.btn_cancelar.BackColor = System.Drawing.Color.Gray;
+            this.btn_cancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_cancelar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cancelar.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelar.ForeColor = System.Drawing.Color.White;
+            this.btn_cancelar.Image = global::Health_Control.Properties.Resources.btn_novo_cadastro;
+            this.btn_cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_cancelar.Location = new System.Drawing.Point(360, 513);
+            this.btn_cancelar.Name = "btn_cancelar";
+            this.btn_cancelar.Size = new System.Drawing.Size(141, 30);
+            this.btn_cancelar.TabIndex = 15;
+            this.btn_cancelar.Text = "CANCELAR";
+            this.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_cancelar.UseVisualStyleBackColor = false;
+            // 
+            // img_icon_cadastro
+            // 
+            this.img_icon_cadastro.Image = global::Health_Control.Properties.Resources.icon_cadastro;
+            this.img_icon_cadastro.Location = new System.Drawing.Point(690, 26);
+            this.img_icon_cadastro.Name = "img_icon_cadastro";
+            this.img_icon_cadastro.Size = new System.Drawing.Size(44, 42);
+            this.img_icon_cadastro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_icon_cadastro.TabIndex = 28;
+            this.img_icon_cadastro.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(65, 40);
+            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(207, 366);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 19);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "NOME COMPLETO";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // txt_controle
-            // 
-            this.txt_controle.AutoSize = true;
-            this.txt_controle.BackColor = System.Drawing.Color.Transparent;
-            this.txt_controle.Font = new System.Drawing.Font("Arial Narrow", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_controle.Location = new System.Drawing.Point(436, 36);
-            this.txt_controle.Name = "txt_controle";
-            this.txt_controle.Size = new System.Drawing.Size(388, 33);
-            this.txt_controle.TabIndex = 21;
-            this.txt_controle.Text = "CADASTRO DE COLABORADOR";
-            // 
-            // btn_salvar_cadastro
-            // 
-            this.btn_salvar_cadastro.BackgroundImage = global::Health_Control.Properties.Resources.btn_salvar_cadastro;
-            this.btn_salvar_cadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_salvar_cadastro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_salvar_cadastro.Location = new System.Drawing.Point(1134, 25);
-            this.btn_salvar_cadastro.Name = "btn_salvar_cadastro";
-            this.btn_salvar_cadastro.Size = new System.Drawing.Size(109, 54);
-            this.btn_salvar_cadastro.TabIndex = 27;
-            this.btn_salvar_cadastro.UseVisualStyleBackColor = true;
-            // 
-            // btn_voltar
-            // 
-            this.btn_voltar.BackgroundImage = global::Health_Control.Properties.Resources.btn_voltar;
-            this.btn_voltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_voltar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_voltar.Location = new System.Drawing.Point(20, 25);
-            this.btn_voltar.Name = "btn_voltar";
-            this.btn_voltar.Size = new System.Drawing.Size(109, 54);
-            this.btn_voltar.TabIndex = 26;
-            this.btn_voltar.UseVisualStyleBackColor = true;
-            // 
-            // text_nome
-            // 
-            this.text_nome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.text_nome.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_nome.ForeColor = System.Drawing.Color.Gray;
-            this.text_nome.Location = new System.Drawing.Point(80, 80);
-            this.text_nome.Name = "text_nome";
-            this.text_nome.Size = new System.Drawing.Size(496, 28);
-            this.text_nome.TabIndex = 14;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(69, 71);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(517, 46);
-            this.panel2.TabIndex = 15;
+            this.label1.Size = new System.Drawing.Size(84, 16);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "DESCRIÇÃO";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(80, 383);
+            this.textBox1.Location = new System.Drawing.Point(5, 7);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(122, 28);
-            this.textBox1.TabIndex = 16;
+            this.textBox1.Size = new System.Drawing.Size(231, 84);
+            this.textBox1.TabIndex = 14;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(69, 374);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Location = new System.Drawing.Point(210, 385);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(148, 46);
-            this.panel1.TabIndex = 17;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Gray;
-            this.textBox2.Location = new System.Drawing.Point(80, 282);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(195, 28);
-            this.textBox2.TabIndex = 18;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Location = new System.Drawing.Point(69, 273);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(221, 46);
-            this.panel4.TabIndex = 19;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Gray;
-            this.textBox3.Location = new System.Drawing.Point(80, 181);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(496, 28);
-            this.textBox3.TabIndex = 20;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Location = new System.Drawing.Point(69, 172);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(517, 46);
-            this.panel5.TabIndex = 21;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.Gray;
-            this.textBox4.Location = new System.Drawing.Point(80, 481);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(195, 28);
-            this.textBox4.TabIndex = 22;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Location = new System.Drawing.Point(69, 472);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(221, 46);
-            this.panel6.TabIndex = 23;
+            this.panel1.Size = new System.Drawing.Size(243, 100);
+            this.panel1.TabIndex = 35;
             // 
             // tela_cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.txt_controle);
-            this.Controls.Add(this.btn_salvar_cadastro);
-            this.Controls.Add(this.btn_voltar);
-            this.Controls.Add(this.panel3);
+            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.ClientSize = new System.Drawing.Size(1008, 561);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_cadastrar);
+            this.Controls.Add(this.btn_cancelar);
+            this.Controls.Add(this.pnl_funcao);
+            this.Controls.Add(this.txt_funcao);
+            this.Controls.Add(this.pnl_nascimento);
+            this.Controls.Add(this.txt_nascimento);
+            this.Controls.Add(this.pnl_telefone);
+            this.Controls.Add(this.txt_telefone);
+            this.Controls.Add(this.pnl_email);
+            this.Controls.Add(this.txt_email);
+            this.Controls.Add(this.img_icon_cadastro);
+            this.Controls.Add(this.txt_cadastro);
+            this.Controls.Add(this.pnl_divisor);
+            this.Controls.Add(this.pnl_nomecompleto);
+            this.Controls.Add(this.txt_nomecompleto);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "tela_cadastro";
             this.Text = "Health Control";
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.pnl_nomecompleto.ResumeLayout(false);
+            this.pnl_nomecompleto.PerformLayout();
+            this.pnl_email.ResumeLayout(false);
+            this.pnl_email.PerformLayout();
+            this.pnl_telefone.ResumeLayout(false);
+            this.pnl_telefone.PerformLayout();
+            this.pnl_nascimento.ResumeLayout(false);
+            this.pnl_nascimento.PerformLayout();
+            this.pnl_funcao.ResumeLayout(false);
+            this.pnl_funcao.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_icon_cadastro)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label txt_controle;
-        private System.Windows.Forms.Button btn_voltar;
-        private System.Windows.Forms.Button btn_salvar_cadastro;
+        private System.Windows.Forms.Label txt_cadastro;
+        private System.Windows.Forms.Label txt_nomecompleto;
+        private System.Windows.Forms.Panel pnl_nomecompleto;
+        private System.Windows.Forms.TextBox textbox_nomecompleto;
+        private System.Windows.Forms.Panel pnl_divisor;
+        private System.Windows.Forms.PictureBox img_icon_cadastro;
+        private System.Windows.Forms.Label txt_email;
+        private System.Windows.Forms.Panel pnl_email;
+        private System.Windows.Forms.TextBox textbox_email;
+        private System.Windows.Forms.Panel pnl_telefone;
+        private System.Windows.Forms.TextBox textbox_telefone;
+        private System.Windows.Forms.Label txt_telefone;
+        private System.Windows.Forms.Panel pnl_nascimento;
+        private System.Windows.Forms.TextBox textbox_nascimento;
+        private System.Windows.Forms.Label txt_nascimento;
+        private System.Windows.Forms.Panel pnl_funcao;
+        private System.Windows.Forms.TextBox textbox_funcao;
+        private System.Windows.Forms.Label txt_funcao;
+        private System.Windows.Forms.Button btn_cancelar;
+        private System.Windows.Forms.Button btn_cadastrar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox text_nome;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Panel panel5;
     }
 }
