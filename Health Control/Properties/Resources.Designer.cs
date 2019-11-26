@@ -83,6 +83,16 @@ namespace Health_Control.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btn_cancel {
+            get {
+                object obj = ResourceManager.GetObject("btn_cancel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_config {
             get {
                 object obj = ResourceManager.GetObject("btn_config", resourceCulture);
@@ -126,6 +136,16 @@ namespace Health_Control.Properties {
         internal static System.Drawing.Bitmap btn_ok {
             get {
                 object obj = ResourceManager.GetObject("btn_ok", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_ok1 {
+            get {
+                object obj = ResourceManager.GetObject("btn_ok1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

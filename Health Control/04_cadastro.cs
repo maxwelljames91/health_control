@@ -46,5 +46,22 @@ namespace Health_Control
         {
 
         }
+
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            tela_relatorio newForm = new tela_relatorio();
+            newForm.ShowDialog();
+        }
+
+        private void textbox_nascimento_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tela_cadastro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

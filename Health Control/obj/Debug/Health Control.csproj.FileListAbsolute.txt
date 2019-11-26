@@ -29,3 +29,14 @@ C:\Users\fr041932\Downloads\Health Control\Health Control\obj\Debug\Health Contr
 C:\Users\fr041932\Downloads\Health Control\Health Control\obj\Debug\Health Control.exe
 C:\Users\fr041932\Downloads\Health Control\Health Control\obj\Debug\Health Control.pdb
 C:\Users\fr041932\Downloads\Health Control\Health Control\obj\Debug\Health_Control.tela_cadastro.resources
+C:\Users\Samsung\Desktop\MAX\Health Control\Health Control\Health Control\bin\Debug\Health Control.exe.config
+C:\Users\Samsung\Desktop\MAX\Health Control\Health Control\Health Control\bin\Debug\Health Control.exe
+C:\Users\Samsung\Desktop\MAX\Health Control\Health Control\Health Control\bin\Debug\Health Control.pdb
+C:\Users\Samsung\Desktop\MAX\Health Control\Health Control\Health Control\obj\Debug\Health Control.csprojAssemblyReference.cache
+C:\Users\Samsung\Desktop\MAX\Health Control\Health Control\Health Control\obj\Debug\Health_Control.tela_login.resources
+C:\Users\Samsung\Desktop\MAX\Health Control\Health Control\Health Control\obj\Debug\Health_Control.tela_relatorio.resources
+C:\Users\Samsung\Desktop\MAX\Health Control\Health Control\Health Control\obj\Debug\Health_Control.tela_cadastro.resources
+C:\Users\Samsung\Desktop\MAX\Health Control\Health Control\Health Control\obj\Debug\Health_Control.Properties.Resources.resources
+C:\Users\Samsung\Desktop\MAX\Health Control\Health Control\Health Control\obj\Debug\Health Control.csproj.GenerateResource.cache
+C:\Users\Samsung\Desktop\MAX\Health Control\Health Control\Health Control\obj\Debug\Health Control.exe
+C:\Users\Samsung\Desktop\MAX\Health Control\Health Control\Health Control\obj\Debug\Health Control.pdb

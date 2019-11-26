@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tela_login));
             this.textbox_login = new System.Windows.Forms.TextBox();
             this.textbox_senha = new System.Windows.Forms.TextBox();
-            this.pnl_login = new System.Windows.Forms.Panel();
-            this.img_user = new System.Windows.Forms.PictureBox();
             this.pnl_senha = new System.Windows.Forms.Panel();
             this.img_senha = new System.Windows.Forms.PictureBox();
             this.btn_login = new System.Windows.Forms.Button();
@@ -43,58 +41,49 @@
             this.txt_loginacesso = new System.Windows.Forms.Label();
             this.txt_bemvindo = new System.Windows.Forms.Label();
             this.btn_esqueceu = new System.Windows.Forms.Button();
-            this.pnl_login.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_user)).BeginInit();
+            this.img_user = new System.Windows.Forms.PictureBox();
+            this.pnl_login = new System.Windows.Forms.Panel();
             this.pnl_senha.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_senha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_iconlogin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_medico)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_healthcontrol)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_user)).BeginInit();
+            this.pnl_login.SuspendLayout();
             this.SuspendLayout();
             // 
             // textbox_login
             // 
+            this.textbox_login.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textbox_login.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textbox_login.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_login.ForeColor = System.Drawing.Color.Gray;
+            this.textbox_login.ForeColor = System.Drawing.Color.DarkGray;
             this.textbox_login.Location = new System.Drawing.Point(630, 260);
             this.textbox_login.Name = "textbox_login";
             this.textbox_login.Size = new System.Drawing.Size(252, 25);
             this.textbox_login.TabIndex = 2;
+            this.textbox_login.Text = "Nome de Usuário";
             this.textbox_login.TextChanged += new System.EventHandler(this.text_nome_TextChanged);
+            this.textbox_login.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textbox_login_KeyDown);
+            this.textbox_login.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textbox_login_KeyUp);
             // 
             // textbox_senha
             // 
             this.textbox_senha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textbox_senha.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_senha.ForeColor = System.Drawing.Color.Gray;
+            this.textbox_senha.ForeColor = System.Drawing.Color.DarkGray;
             this.textbox_senha.Location = new System.Drawing.Point(50, 10);
             this.textbox_senha.Name = "textbox_senha";
             this.textbox_senha.Size = new System.Drawing.Size(254, 25);
             this.textbox_senha.TabIndex = 3;
             this.textbox_senha.UseSystemPasswordChar = true;
-            // 
-            // pnl_login
-            // 
-            this.pnl_login.BackColor = System.Drawing.Color.White;
-            this.pnl_login.Controls.Add(this.img_user);
-            this.pnl_login.Location = new System.Drawing.Point(578, 249);
-            this.pnl_login.Name = "pnl_login";
-            this.pnl_login.Size = new System.Drawing.Size(318, 46);
-            this.pnl_login.TabIndex = 11;
-            // 
-            // img_user
-            // 
-            this.img_user.Image = global::Health_Control.Properties.Resources.icon_user_3;
-            this.img_user.Location = new System.Drawing.Point(6, 8);
-            this.img_user.Name = "img_user";
-            this.img_user.Size = new System.Drawing.Size(35, 28);
-            this.img_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img_user.TabIndex = 16;
-            this.img_user.TabStop = false;
+            this.textbox_senha.TextChanged += new System.EventHandler(this.textbox_senha_TextChanged);
+            this.textbox_senha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textbox_senha_KeyDown);
+            this.textbox_senha.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textbox_senha_KeyUp);
             // 
             // pnl_senha
             // 
+            this.pnl_senha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnl_senha.BackColor = System.Drawing.Color.White;
             this.pnl_senha.Controls.Add(this.img_senha);
             this.pnl_senha.Controls.Add(this.textbox_senha);
@@ -115,6 +104,7 @@
             // 
             // btn_login
             // 
+            this.btn_login.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_login.BackColor = System.Drawing.Color.Red;
             this.btn_login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_login.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -133,6 +123,7 @@
             // 
             // cbx_lembrar
             // 
+            this.cbx_lembrar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbx_lembrar.AutoSize = true;
             this.cbx_lembrar.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbx_lembrar.Location = new System.Drawing.Point(580, 428);
@@ -141,9 +132,11 @@
             this.cbx_lembrar.TabIndex = 16;
             this.cbx_lembrar.Text = "Lembrar-me";
             this.cbx_lembrar.UseVisualStyleBackColor = true;
+            this.cbx_lembrar.CheckedChanged += new System.EventHandler(this.cbx_lembrar_CheckedChanged);
             // 
             // img_iconlogin
             // 
+            this.img_iconlogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.img_iconlogin.Image = global::Health_Control.Properties.Resources.user_login;
             this.img_iconlogin.Location = new System.Drawing.Point(678, 110);
             this.img_iconlogin.Name = "img_iconlogin";
@@ -154,6 +147,7 @@
             // 
             // img_medico
             // 
+            this.img_medico.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.img_medico.BackColor = System.Drawing.Color.Transparent;
             this.img_medico.ErrorImage = global::Health_Control.Properties.Resources.medico_art_low;
             this.img_medico.Image = global::Health_Control.Properties.Resources.medico_art_low;
@@ -166,9 +160,10 @@
             // 
             // img_healthcontrol
             // 
+            this.img_healthcontrol.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.img_healthcontrol.BackColor = System.Drawing.Color.Transparent;
             this.img_healthcontrol.Image = global::Health_Control.Properties.Resources.logo_low;
-            this.img_healthcontrol.Location = new System.Drawing.Point(122, 71);
+            this.img_healthcontrol.Location = new System.Drawing.Point(133, 70);
             this.img_healthcontrol.Name = "img_healthcontrol";
             this.img_healthcontrol.Size = new System.Drawing.Size(243, 95);
             this.img_healthcontrol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -177,6 +172,7 @@
             // 
             // txt_loginacesso
             // 
+            this.txt_loginacesso.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_loginacesso.AutoSize = true;
             this.txt_loginacesso.BackColor = System.Drawing.Color.Transparent;
             this.txt_loginacesso.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -188,6 +184,7 @@
             // 
             // txt_bemvindo
             // 
+            this.txt_bemvindo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_bemvindo.AutoSize = true;
             this.txt_bemvindo.BackColor = System.Drawing.Color.Transparent;
             this.txt_bemvindo.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -200,6 +197,7 @@
             // 
             // btn_esqueceu
             // 
+            this.btn_esqueceu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_esqueceu.BackColor = System.Drawing.Color.Transparent;
             this.btn_esqueceu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_esqueceu.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -214,11 +212,33 @@
             this.btn_esqueceu.TabIndex = 20;
             this.btn_esqueceu.Text = "Esqueceu a senha?";
             this.btn_esqueceu.UseVisualStyleBackColor = false;
+            this.btn_esqueceu.Click += new System.EventHandler(this.btn_esqueceu_Click);
+            // 
+            // img_user
+            // 
+            this.img_user.Image = global::Health_Control.Properties.Resources.icon_user_3;
+            this.img_user.Location = new System.Drawing.Point(6, 8);
+            this.img_user.Name = "img_user";
+            this.img_user.Size = new System.Drawing.Size(35, 28);
+            this.img_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_user.TabIndex = 16;
+            this.img_user.TabStop = false;
+            // 
+            // pnl_login
+            // 
+            this.pnl_login.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnl_login.BackColor = System.Drawing.Color.White;
+            this.pnl_login.Controls.Add(this.img_user);
+            this.pnl_login.Location = new System.Drawing.Point(578, 249);
+            this.pnl_login.Name = "pnl_login";
+            this.pnl_login.Size = new System.Drawing.Size(318, 46);
+            this.pnl_login.TabIndex = 11;
             // 
             // tela_login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AcceptButton = this.btn_login;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -235,19 +255,21 @@
             this.Controls.Add(this.pnl_login);
             this.Controls.Add(this.pnl_senha);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "tela_login";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Health Control";
             this.Load += new System.EventHandler(this.tela_login_Load);
-            this.pnl_login.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.img_user)).EndInit();
             this.pnl_senha.ResumeLayout(false);
             this.pnl_senha.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_senha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_iconlogin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_medico)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_healthcontrol)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_user)).EndInit();
+            this.pnl_login.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,11 +278,9 @@
         #endregion
         private System.Windows.Forms.TextBox textbox_login;
         private System.Windows.Forms.TextBox textbox_senha;
-        private System.Windows.Forms.Panel pnl_login;
         private System.Windows.Forms.Panel pnl_senha;
         private System.Windows.Forms.PictureBox img_healthcontrol;
         private System.Windows.Forms.PictureBox img_medico;
-        private System.Windows.Forms.PictureBox img_user;
         private System.Windows.Forms.PictureBox img_senha;
         private System.Windows.Forms.Button btn_login;
         private System.Windows.Forms.CheckBox cbx_lembrar;
@@ -268,6 +288,8 @@
         private System.Windows.Forms.Label txt_loginacesso;
         private System.Windows.Forms.Label txt_bemvindo;
         private System.Windows.Forms.Button btn_esqueceu;
+        private System.Windows.Forms.PictureBox img_user;
+        private System.Windows.Forms.Panel pnl_login;
     }
 }
 
