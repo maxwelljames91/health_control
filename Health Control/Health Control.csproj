@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -158,6 +160,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn_ok1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_yellow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

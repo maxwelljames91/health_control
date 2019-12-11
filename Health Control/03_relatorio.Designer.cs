@@ -34,15 +34,16 @@
             this.txt_sejabemvindo = new System.Windows.Forms.Label();
             this.pnl_data = new System.Windows.Forms.Panel();
             this.txt_data = new System.Windows.Forms.Label();
+            this.txt_data_hoje = new System.Windows.Forms.Label();
             this.pnl_pesquisa = new System.Windows.Forms.Panel();
-            this.btn_pesquisar = new System.Windows.Forms.Button();
             this.textbox_pesquisa = new System.Windows.Forms.TextBox();
-            this.btn_acoes = new System.Windows.Forms.Button();
-            this.btn_filtro = new System.Windows.Forms.Button();
-            this.btn_novo_cadastro = new System.Windows.Forms.Button();
-            this.btn_config = new System.Windows.Forms.Button();
-            this.btn_logoff = new System.Windows.Forms.Button();
             this.dgv_relatorio = new System.Windows.Forms.DataGridView();
+            this.btn_logoff = new System.Windows.Forms.Button();
+            this.btn_config = new System.Windows.Forms.Button();
+            this.btn_novo_cadastro = new System.Windows.Forms.Button();
+            this.btn_filtro = new System.Windows.Forms.Button();
+            this.btn_pesquisar = new System.Windows.Forms.Button();
+            this.btn_acoes = new System.Windows.Forms.Button();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,7 +67,6 @@
             this.txt_controle.Size = new System.Drawing.Size(336, 20);
             this.txt_controle.TabIndex = 9;
             this.txt_controle.Text = "RELATÓRIO DO CONTROLE DE EXAMES DE SAÚDE";
-            this.txt_controle.Click += new System.EventHandler(this.txt_controle_Click);
             // 
             // txt_sejabemvindo
             // 
@@ -80,30 +80,38 @@
             this.txt_sejabemvindo.Size = new System.Drawing.Size(190, 27);
             this.txt_sejabemvindo.TabIndex = 10;
             this.txt_sejabemvindo.Text = "BEM-VINDO(A), ";
-            this.txt_sejabemvindo.Click += new System.EventHandler(this.txt_sejabemvindo_Click);
             // 
             // pnl_data
             // 
             this.pnl_data.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnl_data.BackColor = System.Drawing.Color.Khaki;
             this.pnl_data.Controls.Add(this.txt_data);
+            this.pnl_data.Controls.Add(this.txt_data_hoje);
             this.pnl_data.Location = new System.Drawing.Point(585, 13);
             this.pnl_data.Name = "pnl_data";
             this.pnl_data.Size = new System.Drawing.Size(108, 69);
             this.pnl_data.TabIndex = 11;
-            this.pnl_data.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_data_Paint);
             // 
             // txt_data
             // 
             this.txt_data.AutoSize = true;
-            this.txt_data.BackColor = System.Drawing.Color.Khaki;
-            this.txt_data.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_data.Location = new System.Drawing.Point(11, 6);
+            this.txt_data.Font = new System.Drawing.Font("Arial Narrow", 13F, System.Drawing.FontStyle.Bold);
+            this.txt_data.Location = new System.Drawing.Point(12, 34);
             this.txt_data.Name = "txt_data";
-            this.txt_data.Size = new System.Drawing.Size(86, 16);
-            this.txt_data.TabIndex = 12;
-            this.txt_data.Text = "DATA DE HOJE";
-            this.txt_data.Click += new System.EventHandler(this.txt_data_Click);
+            this.txt_data.Size = new System.Drawing.Size(42, 22);
+            this.txt_data.TabIndex = 13;
+            this.txt_data.Text = "Data";
+            // 
+            // txt_data_hoje
+            // 
+            this.txt_data_hoje.AutoSize = true;
+            this.txt_data_hoje.BackColor = System.Drawing.Color.Khaki;
+            this.txt_data_hoje.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_data_hoje.Location = new System.Drawing.Point(11, 11);
+            this.txt_data_hoje.Name = "txt_data_hoje";
+            this.txt_data_hoje.Size = new System.Drawing.Size(86, 16);
+            this.txt_data_hoje.TabIndex = 12;
+            this.txt_data_hoje.Text = "DATA DE HOJE";
             // 
             // pnl_pesquisa
             // 
@@ -115,21 +123,7 @@
             this.pnl_pesquisa.Location = new System.Drawing.Point(706, 13);
             this.pnl_pesquisa.Name = "pnl_pesquisa";
             this.pnl_pesquisa.Size = new System.Drawing.Size(290, 30);
-            this.pnl_pesquisa.TabIndex = 8;
-            // 
-            // btn_pesquisar
-            // 
-            this.btn_pesquisar.BackgroundImage = global::Health_Control.Properties.Resources.btn_pesquisa;
-            this.btn_pesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_pesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_pesquisar.FlatAppearance.BorderSize = 0;
-            this.btn_pesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_pesquisar.Location = new System.Drawing.Point(250, 0);
-            this.btn_pesquisar.Name = "btn_pesquisar";
-            this.btn_pesquisar.Size = new System.Drawing.Size(38, 29);
-            this.btn_pesquisar.TabIndex = 10;
-            this.btn_pesquisar.UseVisualStyleBackColor = true;
-            this.btn_pesquisar.Click += new System.EventHandler(this.btn_pesquisar_Click);
+            this.pnl_pesquisa.TabIndex = 1;
             // 
             // textbox_pesquisa
             // 
@@ -139,95 +133,27 @@
             this.textbox_pesquisa.Location = new System.Drawing.Point(8, 6);
             this.textbox_pesquisa.Name = "textbox_pesquisa";
             this.textbox_pesquisa.Size = new System.Drawing.Size(237, 15);
-            this.textbox_pesquisa.TabIndex = 9;
+            this.textbox_pesquisa.TabIndex = 0;
             this.textbox_pesquisa.Text = "Pesquisar";
-            this.textbox_pesquisa.TextChanged += new System.EventHandler(this.textbox_pesquisa_TextChanged);
             this.textbox_pesquisa.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textbox_pesquisa_KeyDown);
             this.textbox_pesquisa.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textbox_pesquisa_KeyUp);
             // 
-            // btn_acoes
+            // dgv_relatorio
             // 
-            this.btn_acoes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_acoes.BackColor = System.Drawing.Color.Gray;
-            this.btn_acoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_acoes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_acoes.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btn_acoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_acoes.Font = new System.Drawing.Font("Arial Black", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_acoes.ForeColor = System.Drawing.Color.White;
-            this.btn_acoes.Image = global::Health_Control.Properties.Resources.btn_acoes;
-            this.btn_acoes.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_acoes.Location = new System.Drawing.Point(855, 52);
-            this.btn_acoes.Name = "btn_acoes";
-            this.btn_acoes.Size = new System.Drawing.Size(141, 30);
-            this.btn_acoes.TabIndex = 7;
-            this.btn_acoes.Text = "       AÇÕES";
-            this.btn_acoes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_acoes.UseVisualStyleBackColor = false;
-            this.btn_acoes.Click += new System.EventHandler(this.btn_acoes_Click);
-            // 
-            // btn_filtro
-            // 
-            this.btn_filtro.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_filtro.BackColor = System.Drawing.Color.Gray;
-            this.btn_filtro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_filtro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_filtro.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btn_filtro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_filtro.Font = new System.Drawing.Font("Arial Black", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_filtro.ForeColor = System.Drawing.Color.White;
-            this.btn_filtro.Image = global::Health_Control.Properties.Resources.btn_filtro;
-            this.btn_filtro.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_filtro.Location = new System.Drawing.Point(706, 52);
-            this.btn_filtro.Name = "btn_filtro";
-            this.btn_filtro.Size = new System.Drawing.Size(141, 30);
-            this.btn_filtro.TabIndex = 12;
-            this.btn_filtro.Text = "   FILTRAGEM";
-            this.btn_filtro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_filtro.UseVisualStyleBackColor = false;
-            this.btn_filtro.Click += new System.EventHandler(this.btn_filtro_Click);
-            // 
-            // btn_novo_cadastro
-            // 
-            this.btn_novo_cadastro.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_novo_cadastro.BackColor = System.Drawing.Color.Green;
-            this.btn_novo_cadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_novo_cadastro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_novo_cadastro.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_novo_cadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_novo_cadastro.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_novo_cadastro.ForeColor = System.Drawing.Color.White;
-            this.btn_novo_cadastro.Image = global::Health_Control.Properties.Resources.btn_novo_cadastro;
-            this.btn_novo_cadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_novo_cadastro.Location = new System.Drawing.Point(855, 92);
-            this.btn_novo_cadastro.Name = "btn_novo_cadastro";
-            this.btn_novo_cadastro.Size = new System.Drawing.Size(141, 59);
-            this.btn_novo_cadastro.TabIndex = 13;
-            this.btn_novo_cadastro.Text = "  NOVO\r\n  CADASTRO";
-            this.btn_novo_cadastro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_novo_cadastro.UseVisualStyleBackColor = false;
-            this.btn_novo_cadastro.Click += new System.EventHandler(this.btn_novo_cadastro_Click);
-            // 
-            // btn_config
-            // 
-            this.btn_config.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_config.BackColor = System.Drawing.Color.Gray;
-            this.btn_config.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_config.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_config.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btn_config.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_config.Font = new System.Drawing.Font("Arial Black", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_config.ForeColor = System.Drawing.Color.White;
-            this.btn_config.Image = global::Health_Control.Properties.Resources.btn_config;
-            this.btn_config.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_config.Location = new System.Drawing.Point(855, 479);
-            this.btn_config.Name = "btn_config";
-            this.btn_config.Size = new System.Drawing.Size(141, 30);
-            this.btn_config.TabIndex = 14;
-            this.btn_config.Text = " CONFIGURAÇÕES";
-            this.btn_config.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_config.UseVisualStyleBackColor = false;
-            this.btn_config.Click += new System.EventHandler(this.btn_config_Click);
+            this.dgv_relatorio.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgv_relatorio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_relatorio.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewCheckBoxColumn1,
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewImageColumn1});
+            this.dgv_relatorio.Location = new System.Drawing.Point(15, 92);
+            this.dgv_relatorio.Name = "dgv_relatorio";
+            this.dgv_relatorio.Size = new System.Drawing.Size(832, 457);
+            this.dgv_relatorio.TabIndex = 0;
             // 
             // btn_logoff
             // 
@@ -245,28 +171,105 @@
             this.btn_logoff.Location = new System.Drawing.Point(855, 519);
             this.btn_logoff.Name = "btn_logoff";
             this.btn_logoff.Size = new System.Drawing.Size(141, 30);
-            this.btn_logoff.TabIndex = 15;
+            this.btn_logoff.TabIndex = 6;
             this.btn_logoff.Text = "     LOGOFF";
             this.btn_logoff.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_logoff.UseVisualStyleBackColor = false;
             this.btn_logoff.Click += new System.EventHandler(this.btn_logoff_Click);
             // 
-            // dgv_relatorio
+            // btn_config
             // 
-            this.dgv_relatorio.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dgv_relatorio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_relatorio.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewCheckBoxColumn1,
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewImageColumn1});
-            this.dgv_relatorio.Location = new System.Drawing.Point(15, 92);
-            this.dgv_relatorio.Name = "dgv_relatorio";
-            this.dgv_relatorio.Size = new System.Drawing.Size(832, 457);
-            this.dgv_relatorio.TabIndex = 16;
+            this.btn_config.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_config.BackColor = System.Drawing.Color.Gray;
+            this.btn_config.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_config.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_config.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btn_config.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_config.Font = new System.Drawing.Font("Arial Black", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_config.ForeColor = System.Drawing.Color.White;
+            this.btn_config.Image = global::Health_Control.Properties.Resources.btn_config;
+            this.btn_config.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_config.Location = new System.Drawing.Point(855, 479);
+            this.btn_config.Name = "btn_config";
+            this.btn_config.Size = new System.Drawing.Size(141, 30);
+            this.btn_config.TabIndex = 5;
+            this.btn_config.Text = " CONFIGURAÇÕES";
+            this.btn_config.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_config.UseVisualStyleBackColor = false;
+            // 
+            // btn_novo_cadastro
+            // 
+            this.btn_novo_cadastro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_novo_cadastro.BackColor = System.Drawing.Color.Green;
+            this.btn_novo_cadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_novo_cadastro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_novo_cadastro.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_novo_cadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_novo_cadastro.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_novo_cadastro.ForeColor = System.Drawing.Color.White;
+            this.btn_novo_cadastro.Image = global::Health_Control.Properties.Resources.btn_novo_cadastro;
+            this.btn_novo_cadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_novo_cadastro.Location = new System.Drawing.Point(855, 92);
+            this.btn_novo_cadastro.Name = "btn_novo_cadastro";
+            this.btn_novo_cadastro.Size = new System.Drawing.Size(141, 59);
+            this.btn_novo_cadastro.TabIndex = 4;
+            this.btn_novo_cadastro.Text = "  NOVO\r\n  CADASTRO";
+            this.btn_novo_cadastro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_novo_cadastro.UseVisualStyleBackColor = false;
+            this.btn_novo_cadastro.Click += new System.EventHandler(this.btn_novo_cadastro_Click);
+            // 
+            // btn_filtro
+            // 
+            this.btn_filtro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_filtro.BackColor = System.Drawing.Color.Gray;
+            this.btn_filtro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_filtro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_filtro.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btn_filtro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_filtro.Font = new System.Drawing.Font("Arial Black", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_filtro.ForeColor = System.Drawing.Color.White;
+            this.btn_filtro.Image = global::Health_Control.Properties.Resources.btn_filtro;
+            this.btn_filtro.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_filtro.Location = new System.Drawing.Point(706, 52);
+            this.btn_filtro.Name = "btn_filtro";
+            this.btn_filtro.Size = new System.Drawing.Size(141, 30);
+            this.btn_filtro.TabIndex = 2;
+            this.btn_filtro.Text = "   FILTRAGEM";
+            this.btn_filtro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_filtro.UseVisualStyleBackColor = false;
+            // 
+            // btn_pesquisar
+            // 
+            this.btn_pesquisar.BackgroundImage = global::Health_Control.Properties.Resources.btn_pesquisa;
+            this.btn_pesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_pesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_pesquisar.FlatAppearance.BorderSize = 0;
+            this.btn_pesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_pesquisar.Location = new System.Drawing.Point(250, 0);
+            this.btn_pesquisar.Name = "btn_pesquisar";
+            this.btn_pesquisar.Size = new System.Drawing.Size(38, 29);
+            this.btn_pesquisar.TabIndex = 1;
+            this.btn_pesquisar.UseVisualStyleBackColor = true;
+            // 
+            // btn_acoes
+            // 
+            this.btn_acoes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_acoes.BackColor = System.Drawing.Color.Gray;
+            this.btn_acoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_acoes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_acoes.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btn_acoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_acoes.Font = new System.Drawing.Font("Arial Black", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_acoes.ForeColor = System.Drawing.Color.White;
+            this.btn_acoes.Image = global::Health_Control.Properties.Resources.btn_acoes;
+            this.btn_acoes.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_acoes.Location = new System.Drawing.Point(855, 52);
+            this.btn_acoes.Name = "btn_acoes";
+            this.btn_acoes.Size = new System.Drawing.Size(141, 30);
+            this.btn_acoes.TabIndex = 3;
+            this.btn_acoes.Text = "       AÇÕES";
+            this.btn_acoes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_acoes.UseVisualStyleBackColor = false;
             // 
             // dataGridViewCheckBoxColumn1
             // 
@@ -295,7 +298,7 @@
             // 
             // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "ÚLTIMO EXAME";
+            this.dataGridViewTextBoxColumn4.HeaderText = "DATA DE REALIZAÇÃO";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // dataGridViewTextBoxColumn5
@@ -349,7 +352,7 @@
         private System.Windows.Forms.Label txt_sejabemvindo;
         private System.Windows.Forms.Button btn_acoes;
         private System.Windows.Forms.Panel pnl_data;
-        private System.Windows.Forms.Label txt_data;
+        private System.Windows.Forms.Label txt_data_hoje;
         private System.Windows.Forms.Panel pnl_pesquisa;
         private System.Windows.Forms.TextBox textbox_pesquisa;
         private System.Windows.Forms.Button btn_filtro;
@@ -358,6 +361,7 @@
         private System.Windows.Forms.Button btn_config;
         private System.Windows.Forms.Button btn_logoff;
         private System.Windows.Forms.DataGridView dgv_relatorio;
+        private System.Windows.Forms.Label txt_data;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
