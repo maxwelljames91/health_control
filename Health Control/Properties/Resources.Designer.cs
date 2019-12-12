@@ -103,9 +103,39 @@ namespace Health_Control.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btn_enviar {
+            get {
+                object obj = ResourceManager.GetObject("btn_enviar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_excluir {
+            get {
+                object obj = ResourceManager.GetObject("btn_excluir", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_filtro {
             get {
                 object obj = ResourceManager.GetObject("btn_filtro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_imprimir {
+            get {
+                object obj = ResourceManager.GetObject("btn_imprimir", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

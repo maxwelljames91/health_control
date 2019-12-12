@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tela_relatorio));
             this.txt_controle = new System.Windows.Forms.Label();
             this.txt_sejabemvindo = new System.Windows.Forms.Label();
@@ -36,18 +35,19 @@
             this.txt_data = new System.Windows.Forms.Label();
             this.txt_data_hoje = new System.Windows.Forms.Label();
             this.pnl_pesquisa = new System.Windows.Forms.Panel();
+            this.btn_pesquisar = new System.Windows.Forms.Button();
             this.textbox_pesquisa = new System.Windows.Forms.TextBox();
             this.dgv_relatorio = new System.Windows.Forms.DataGridView();
             this.btn_logoff = new System.Windows.Forms.Button();
             this.btn_config = new System.Windows.Forms.Button();
             this.btn_novo_cadastro = new System.Windows.Forms.Button();
             this.btn_filtro = new System.Windows.Forms.Button();
-            this.btn_pesquisar = new System.Windows.Forms.Button();
             this.btn_acoes = new System.Windows.Forms.Button();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -125,6 +125,19 @@
             this.pnl_pesquisa.Size = new System.Drawing.Size(290, 30);
             this.pnl_pesquisa.TabIndex = 1;
             // 
+            // btn_pesquisar
+            // 
+            this.btn_pesquisar.BackgroundImage = global::Health_Control.Properties.Resources.btn_pesquisa;
+            this.btn_pesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_pesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_pesquisar.FlatAppearance.BorderSize = 0;
+            this.btn_pesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_pesquisar.Location = new System.Drawing.Point(250, 0);
+            this.btn_pesquisar.Name = "btn_pesquisar";
+            this.btn_pesquisar.Size = new System.Drawing.Size(38, 29);
+            this.btn_pesquisar.TabIndex = 1;
+            this.btn_pesquisar.UseVisualStyleBackColor = true;
+            // 
             // textbox_pesquisa
             // 
             this.textbox_pesquisa.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -147,6 +160,7 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
+            this.Column1,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewImageColumn1});
@@ -237,19 +251,7 @@
             this.btn_filtro.Text = "   FILTRAGEM";
             this.btn_filtro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_filtro.UseVisualStyleBackColor = false;
-            // 
-            // btn_pesquisar
-            // 
-            this.btn_pesquisar.BackgroundImage = global::Health_Control.Properties.Resources.btn_pesquisa;
-            this.btn_pesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_pesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_pesquisar.FlatAppearance.BorderSize = 0;
-            this.btn_pesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_pesquisar.Location = new System.Drawing.Point(250, 0);
-            this.btn_pesquisar.Name = "btn_pesquisar";
-            this.btn_pesquisar.Size = new System.Drawing.Size(38, 29);
-            this.btn_pesquisar.TabIndex = 1;
-            this.btn_pesquisar.UseVisualStyleBackColor = true;
+            this.btn_filtro.Click += new System.EventHandler(this.btn_filtro_Click);
             // 
             // btn_acoes
             // 
@@ -270,6 +272,7 @@
             this.btn_acoes.Text = "       AÇÕES";
             this.btn_acoes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_acoes.UseVisualStyleBackColor = false;
+            this.btn_acoes.Click += new System.EventHandler(this.btn_acoes_Click);
             // 
             // dataGridViewCheckBoxColumn1
             // 
@@ -280,11 +283,9 @@
             // 
             // dataGridViewTextBoxColumn1
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewTextBoxColumn1.HeaderText = "COLABORADOR";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 250;
+            this.dataGridViewTextBoxColumn1.Width = 180;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -293,8 +294,13 @@
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "TIPO DE EXAME";
+            this.dataGridViewTextBoxColumn3.HeaderText = "EXAME";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "TIPO";
+            this.Column1.Name = "Column1";
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -303,8 +309,9 @@
             // 
             // dataGridViewTextBoxColumn5
             // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "PRÓXIMO EXAME";
+            this.dataGridViewTextBoxColumn5.HeaderText = "PERÍODO";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 80;
             // 
             // dataGridViewImageColumn1
             // 
@@ -330,7 +337,6 @@
             this.Controls.Add(this.pnl_data);
             this.Controls.Add(this.btn_acoes);
             this.Controls.Add(this.txt_controle);
-            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "tela_relatorio";
@@ -366,6 +372,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;

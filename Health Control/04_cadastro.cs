@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace Health_Control
 {
@@ -181,6 +184,15 @@ namespace Health_Control
             {
                 MessageBox.Show("Por favor, selecione um tipo de exame no campo 'TIPO'.", caption: "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button2);
                 combobox_tipo.Focus();
+                return;
+            }
+
+            //     VALIDAÇÃO DO PERÍODO
+
+            if (combobox_periodo.Text == "[Selecione]")
+            {
+                MessageBox.Show("Por favor, selecione o período do exame no campo 'PERÍODO'.", caption: "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button2);
+                combobox_periodo.Focus();
                 return;
             }
 

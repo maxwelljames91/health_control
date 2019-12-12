@@ -58,11 +58,11 @@
             this.textbox_exame = new System.Windows.Forms.TextBox();
             this.combobox_tipo = new System.Windows.Forms.ComboBox();
             this.dtp_realizacao = new System.Windows.Forms.DateTimePicker();
-            this.dtp_periodo = new System.Windows.Forms.DateTimePicker();
             this.pnl_descricao_exame = new System.Windows.Forms.Panel();
             this.textbox_descricao_exame = new System.Windows.Forms.TextBox();
             this.pnl_cadastro = new System.Windows.Forms.Panel();
             this.btn_cancelar = new System.Windows.Forms.Button();
+            this.combobox_periodo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.img_icon_cadastro)).BeginInit();
             this.pnl_telefone.SuspendLayout();
             this.pnl_email.SuspendLayout();
@@ -358,11 +358,11 @@
             this.txt_periodo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_periodo.AutoSize = true;
             this.txt_periodo.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_periodo.Location = new System.Drawing.Point(515, 152);
+            this.txt_periodo.Location = new System.Drawing.Point(559, 152);
             this.txt_periodo.Name = "txt_periodo";
-            this.txt_periodo.Size = new System.Drawing.Size(101, 14);
+            this.txt_periodo.Size = new System.Drawing.Size(57, 14);
             this.txt_periodo.TabIndex = 15;
-            this.txt_periodo.Text = "PRÓXIMO EXAME*";
+            this.txt_periodo.Text = "PERÍODO*";
             this.txt_periodo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txt_descricao_exame
@@ -428,19 +428,6 @@
             this.dtp_realizacao.Size = new System.Drawing.Size(109, 20);
             this.dtp_realizacao.TabIndex = 8;
             // 
-            // dtp_periodo
-            // 
-            this.dtp_periodo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dtp_periodo.CalendarFont = new System.Drawing.Font("Arial", 8.25F);
-            this.dtp_periodo.Font = new System.Drawing.Font("Arial", 8.25F);
-            this.dtp_periodo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_periodo.Location = new System.Drawing.Point(622, 149);
-            this.dtp_periodo.MaxDate = new System.DateTime(3019, 1, 1, 0, 0, 0, 0);
-            this.dtp_periodo.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dtp_periodo.Name = "dtp_periodo";
-            this.dtp_periodo.Size = new System.Drawing.Size(109, 20);
-            this.dtp_periodo.TabIndex = 9;
-            // 
             // pnl_descricao_exame
             // 
             this.pnl_descricao_exame.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -469,9 +456,9 @@
             this.pnl_cadastro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnl_cadastro.BackColor = System.Drawing.Color.Transparent;
             this.pnl_cadastro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_cadastro.Controls.Add(this.combobox_periodo);
             this.pnl_cadastro.Controls.Add(this.btn_cancelar);
             this.pnl_cadastro.Controls.Add(this.pnl_descricao_exame);
-            this.pnl_cadastro.Controls.Add(this.dtp_periodo);
             this.pnl_cadastro.Controls.Add(this.dtp_realizacao);
             this.pnl_cadastro.Controls.Add(this.combobox_tipo);
             this.pnl_cadastro.Controls.Add(this.pnl_exame);
@@ -517,6 +504,22 @@
             this.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_cancelar.UseVisualStyleBackColor = false;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
+            // 
+            // combobox_periodo
+            // 
+            this.combobox_periodo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.combobox_periodo.Font = new System.Drawing.Font("Arial", 8.25F);
+            this.combobox_periodo.ForeColor = System.Drawing.Color.Black;
+            this.combobox_periodo.FormattingEnabled = true;
+            this.combobox_periodo.Items.AddRange(new object[] {
+            "06 meses",
+            "1 ano",
+            "2 anos"});
+            this.combobox_periodo.Location = new System.Drawing.Point(622, 147);
+            this.combobox_periodo.Name = "combobox_periodo";
+            this.combobox_periodo.Size = new System.Drawing.Size(120, 22);
+            this.combobox_periodo.TabIndex = 17;
+            this.combobox_periodo.Text = "[Selecione]";
             // 
             // tela_cadastro
             // 
@@ -584,11 +587,11 @@
         private System.Windows.Forms.TextBox textbox_exame;
         private System.Windows.Forms.ComboBox combobox_tipo;
         private System.Windows.Forms.DateTimePicker dtp_realizacao;
-        private System.Windows.Forms.DateTimePicker dtp_periodo;
         private System.Windows.Forms.Panel pnl_descricao_exame;
         private System.Windows.Forms.TextBox textbox_descricao_exame;
         private System.Windows.Forms.Panel pnl_cadastro;
         private System.Windows.Forms.MaskedTextBox maskedtextbox_telefone;
         private System.Windows.Forms.Button btn_cancelar;
+        private System.Windows.Forms.ComboBox combobox_periodo;
     }
 }

@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace Health_Control
 {
@@ -62,5 +65,16 @@ namespace Health_Control
             }
         }
 
+        private void btn_filtro_Click(object sender, EventArgs e)
+        {
+            tela_filtragem newForm = new tela_filtragem();
+            newForm.ShowDialog();
+        }
+
+        private void btn_acoes_Click(object sender, EventArgs e)
+        {
+            tela_acoes newForm = new tela_acoes();
+            newForm.ShowDialog();
+        }
     }
 }

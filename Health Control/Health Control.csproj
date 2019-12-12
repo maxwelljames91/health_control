@@ -35,6 +35,9 @@
     <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -67,6 +70,18 @@
     <Compile Include="04_cadastro.Designer.cs">
       <DependentUpon>04_cadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="06_acoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="06_acoes.Designer.cs">
+      <DependentUpon>06_acoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="05_filtragem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="05_filtragem.Designer.cs">
+      <DependentUpon>05_filtragem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="01_login.resx">
@@ -78,6 +93,12 @@
     <EmbeddedResource Include="04_cadastro.resx">
       <DependentUpon>04_cadastro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="06_acoes.resx">
+      <DependentUpon>06_acoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="05_filtragem.resx">
+      <DependentUpon>05_filtragem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -88,6 +109,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -169,6 +191,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\img_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_imprimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_enviar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_excluir.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
